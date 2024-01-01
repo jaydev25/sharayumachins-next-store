@@ -29,11 +29,12 @@ module.exports = withStoreConfig({
         hostname: "medusa-server-testing.s3.us-east-1.amazonaws.com",
       },
     ],
+    domains: [
+      process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL,
+      process.env.NEXT_PUBLIC_BASE_URL
+    ],
   },
-  domains: [
-    process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL,
-    process.env.NEXT_PUBLIC_BASE_URL
-  ],
+ 
 })
 
 console.log("next.config.js", JSON.stringify(module.exports, null, 2))
