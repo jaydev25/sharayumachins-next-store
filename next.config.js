@@ -31,6 +31,7 @@ module.exports = withStoreConfig({
     ],
     domains: [
       process.env.API_DOMAIN,
+      process.env.DOMAIN,
     ],
   },
  

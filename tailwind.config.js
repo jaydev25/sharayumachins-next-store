@@ -19,7 +19,11 @@ module.exports = {
         visibility: "visibility",
         padding: "padding-top padding-right padding-bottom padding-left",
       },
+      backgroundImage: {
+        'store-hero': "url('/store_hero.PNG')",
+      },
       colors: {
+        skin: "#fbf7f3",
         grey: {
           0: "#FFFFFF",
           5: "#F9FAFB",
