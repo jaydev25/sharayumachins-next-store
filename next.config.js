@@ -11,27 +11,26 @@ module.exports = withStoreConfig({
   features: store.features,
   reactStrictMode: true,
   images: {
-    remotePatterns: [
-      {
-        protocol: "http",
-        hostname: "localhost",
-      },
-      {
-        protocol: "https",
-        hostname: "medusa-public-images.s3.eu-west-1.amazonaws.com",
-      },
-      {
-        protocol: "https",
-        hostname: "medusa-server-testing.s3.amazonaws.com",
-      },
-      {
-        protocol: "https",
-        hostname: "medusa-server-testing.s3.us-east-1.amazonaws.com",
-      },
-    ],
+    // remotePatterns: [
+    //   {
+    //     protocol: "http",
+    //     hostname: "localhost",
+    //   },
+    //   {
+    //     protocol: "https",
+    //     hostname: "medusa-public-images.s3.eu-west-1.amazonaws.com",
+    //   },
+    //   {
+    //     protocol: "https",
+    //     hostname: "medusa-server-testing.s3.amazonaws.com",
+    //   },
+    //   {
+    //     protocol: "https",
+    //     hostname: "medusa-server-testing.s3.us-east-1.amazonaws.com",
+    //   },
+    // ],
     domains: [
-      process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL,
-      process.env.NEXT_PUBLIC_BASE_URL
+      process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL
     ],
   },
  
