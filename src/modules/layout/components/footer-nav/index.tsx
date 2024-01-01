@@ -141,7 +141,7 @@ const FooterNav = () => {
         </div> */}
         <div className="flex w-full mb-16 justify-between text-ui-fg-muted">
           <Text className="txt-compact-small">
-            © {new Date().getFullYear()} Medusa Store. All rights reserved.
+            © {new Date().getFullYear()} Sharayu Machines Store. All rights reserved.
           </Text>
           <MedusaCTA />
         </div>
