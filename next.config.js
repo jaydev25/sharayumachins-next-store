@@ -30,6 +30,9 @@ module.exports = withStoreConfig({
       },
     ],
   },
+  domains: [
+    process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL,
+  ],
 })
 
 console.log("next.config.js", JSON.stringify(module.exports, null, 2))
